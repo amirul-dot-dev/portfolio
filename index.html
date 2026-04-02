@@ -3,196 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevPortfolio | Full Stack Developer</title>
+    <title>Syed Amirul | Senior Web Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #34d399, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-200 antialiased">
+<body class="bg-[#0f172a] text-slate-300 antialiased">
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
-                    JD.DEV
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="hover:text-indigo-400 transition">Home</a>
-                    <a href="#about" class="hover:text-indigo-400 transition">About</a>
-                    <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
-                    <a href="#contact" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg transition text-white">Hire Me</a>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden">
-                    <button id="menu-btn" class="text-slate-300 focus:outline-none">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-[#0f172a]/80 backdrop-blur-xl border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter text-white">
+                SYED <span class="text-emerald-400">AMIRUL</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-medium uppercase tracking-widest">
+                <a href="#about" class="hover:text-emerald-400 transition">Experience</a>
+                <a href="#skills" class="hover:text-emerald-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-emerald-400 transition">Work</a>
+                <a href="#contact" class="text-emerald-400 border border-emerald-400/50 px-5 py-2 rounded-full hover:bg-emerald-400 hover:text-slate-900 transition">Contact Me</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 px-4">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h2 class="text-indigo-400 font-semibold tracking-widest uppercase text-sm mb-2">Available for hire</h2>
-                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                    Building digital <span class="text-indigo-500">experiences</span> that matter.
+    <section id="about" class="pt-40 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-2/3">
+                <div class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">
+                    5+ Years of Industry Experience
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-[1.1]">
+                    Full Stack <br><span class="gradient-text">Web Developer.</span>
                 </h1>
-                <p class="text-slate-400 text-lg mb-8 max-w-lg leading-relaxed">
-                    Hi, I'm John Doe. A Full-Stack Developer specializing in building high-performance web applications with React, Node.js, and Tailwind CSS.
+                <p class="text-lg text-slate-400 mb-10 max-w-xl leading-relaxed">
+                    Hi, I’m Amirul — a Software Developer with 5+ years of experience building and delivering software solutions. I’ve worked across multiple parts of the stack, from database design to UI refinement, giving me a strong understanding of how each layer of a system connects. Let's building solutions that make everyday challenges easier for people.
                 </p>
-                <div class="flex space-x-4">
-                    <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl font-medium transition">View Work</a>
-                    <a href="#" class="border border-slate-700 hover:bg-slate-800 px-8 py-3 rounded-xl font-medium transition">Resume</a>
-                </div>
-            </div>
-            <div class="md:w-1/3 flex justify-center">
-                <div class="relative w-64 h-64 md:w-80 md:h-80">
-                    <div class="absolute inset-0 bg-indigo-500 rounded-3xl rotate-6 opacity-20"></div>
-                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Profile" class="relative z-10 rounded-3xl bg-slate-800 border-2 border-slate-700 shadow-2xl">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Stack / Skills -->
-    <section class="py-20 bg-slate-800/30">
-        <div class="max-w-6xl mx-auto px-4">
-            <p class="text-center text-slate-500 uppercase tracking-widest text-sm mb-10 font-semibold">My Tech Stack</p>
-            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all">
-                <i class="fab fa-react text-5xl hover:text-[#61DAFB]"></i>
-                <i class="fab fa-node-js text-5xl hover:text-[#339933]"></i>
-                <i class="fab fa-js text-5xl hover:text-[#F7DF1E]"></i>
-                <i class="fab fa-html5 text-5xl hover:text-[#E34F26]"></i>
-                <i class="fab fa-css3-alt text-5xl hover:text-[#1572B6]"></i>
-                <i class="fab fa-python text-5xl hover:text-[#3776AB]"></i>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-24 px-4">
-        <div class="max-w-6xl mx-auto">
-            <div class="flex justify-between items-end mb-16">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Selected Projects</h2>
-                    <div class="h-1.5 w-20 bg-indigo-500 rounded-full"></div>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-indigo-500/50 transition-all hover:-translate-y-2">
-                    <div class="h-48 bg-slate-700 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Project 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="flex items-center space-x-6">
+                    <a href="#projects" class="bg-emerald-500 hover:bg-emerald-400 text-slate-900 px-8 py-4 rounded-2xl font-bold transition-all transform hover:-translate-y-1">
+                        View Projects
+                    </a>
+                    <div class="flex space-x-4 text-2xl">
+                        <!-- <a href="#" class="hover:text-white transition"><i class="fab fa-github"></i></a> -->
+                        <a href="https://www.linkedin.com/in/syed-amirul-922104367/" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">E-Commerce Platform</h3>
-                        <p class="text-slate-400 text-sm mb-4">A full-featured store built with Next.js, Stripe, and PostgreSQL.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="text-[10px] px-2 py-1 bg-slate-900 text-indigo-400 rounded-md border border-slate-700">Next.js</span>
-                            <span class="text-[10px] px-2 py-1 bg-slate-900 text-indigo-400 rounded-md border border-slate-700">Prisma</span>
+                </div>
+            </div>
+            <div class="md:w-1/3 mt-16 md:mt-0 relative">
+                <div class="w-72 h-72 md:w-96 md:h-96 bg-emerald-500/20 rounded-full blur-[100px] absolute -z-10"></div>
+                <img src="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_dev_profile_pic.jpg" alt="Syed Amirul" class="object-cover w-64 h-64 md:w-80 md:h-80 mx-auto rounded-3xl border border-white/10 p-2 bg-slate-800/50 backdrop-blur-sm shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                Expertise <span class="ml-4 h-[1px] w-20 bg-emerald-500/50"></span>
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Frontend -->
+                <div class="p-8 rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition shadow-sm">
+                    <i class="fab fa-react text-4xl text-cyan-400 mb-4"></i>
+                    <h3 class="text-white font-bold text-lg">React</h3>
+                    <p class="text-slate-500 text-sm mt-2">Modern UI development</p>
+                </div>
+                
+                <div class="p-8 rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition shadow-sm">
+                    <i class="fab fa-js text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-white font-bold text-lg">JavaScript</h3>
+                    <p class="text-slate-500 text-sm mt-2">ES6+ Logic & Interaction</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition shadow-sm">
+                    <i class="fab fa-php text-4xl text-indigo-400 mb-4"></i>
+                    <h3 class="text-white font-bold text-lg">PHP</h3>
+                    <p class="text-slate-500 text-sm mt-2">Server-side architecture</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition shadow-sm">
+                    <i class="fa-solid fa-database text-4xl text-emerald-400 mb-4"></i>
+                    <h3 class="text-white font-bold text-lg">SQL</h3>
+                    <p class="text-slate-500 text-sm mt-2">Database Management</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition shadow-sm">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-4"></i>
+                    <h3 class="text-white font-bold text-lg">Tailwind</h3>
+                    <p class="text-slate-500 text-sm mt-2">Utility-first Styling</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition shadow-sm">
+                    <i class="fab fa-bootstrap text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-white font-bold text-lg">Bootstrap</h3>
+                    <p class="text-slate-500 text-sm mt-2">Responsive Frameworks</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition shadow-sm">
+                    <i class="fa-solid fa-code text-4xl text-slate-400 mb-4"></i>
+                    <h3 class="text-white font-bold text-lg">HTML/CSS</h3>
+                    <p class="text-slate-500 text-sm mt-2">Semantic Web Standards</p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition shadow-sm">
+                    <i class="fa-solid fa-gears text-4xl text-blue-400 mb-4"></i>
+                    <h3 class="text-white font-bold text-lg">API Dev</h3>
+                    <p class="text-slate-500 text-sm mt-2">RESTful Services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <div>
+                    <h2 class="text-4xl font-bold text-white mb-4">Selected Work</h2>
+                    <p class="text-slate-400">
+                        This section presents a curated selection of projects that showcase my technical expertise, creativity, and problem-solving abilities. Each project reflects my experience in designing and developing modern web applications, focusing on performance, usability, and clean code practices. Through these works, I aim to demonstrate my passion for building efficient and impactful digital solutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Project 1 -->
+                <div class="group relative bg-slate-800/30 rounded-3xl overflow-hidden border border-white/5">
+                    <div class="aspect-video bg-slate-700 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">Enterprise CRM System</h3>
+                            <span class="text-emerald-400 font-mono text-sm">PHP • SQL</span>
                         </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium text-sm flex items-center">
-                                View Case Study <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                            </a>
-                            <a href="#" class="text-slate-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
-                        </div>
+                        <p class="text-slate-400 mb-6">A custom-built CRM for managing high-volume client data with complex SQL reporting modules.</p>
+                        <a href="#" class="inline-flex items-center text-white font-semibold group-hover:text-emerald-400 transition">
+                            View Project <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-indigo-500/50 transition-all hover:-translate-y-2">
-                    <div class="h-48 bg-slate-700 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1551288049-bbda38a5f452?auto=format&fit=crop&q=80&w=800" alt="Project 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="group relative bg-slate-800/30 rounded-3xl overflow-hidden border border-white/5">
+                    <div class="aspect-video bg-slate-700 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bbda38a5f452?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">AI Dashboard</h3>
-                        <p class="text-slate-400 text-sm mb-4">Real-time data visualization tool for tracking machine learning models.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="text-[10px] px-2 py-1 bg-slate-900 text-indigo-400 rounded-md border border-slate-700">React</span>
-                            <span class="text-[10px] px-2 py-1 bg-slate-900 text-indigo-400 rounded-md border border-slate-700">Tailwind</span>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">SaaS Analytics Dashboard</h3>
+                            <span class="text-emerald-400 font-mono text-sm">React • Tailwind</span>
                         </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium text-sm flex items-center">
-                                View Case Study <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                            </a>
-                            <a href="#" class="text-slate-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-indigo-500/50 transition-all hover:-translate-y-2">
-                    <div class="h-48 bg-slate-700 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800" alt="Project 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Task Management API</h3>
-                        <p class="text-slate-400 text-sm mb-4">Scalable REST API with JWT authentication and documentation.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="text-[10px] px-2 py-1 bg-slate-900 text-indigo-400 rounded-md border border-slate-700">Node.js</span>
-                            <span class="text-[10px] px-2 py-1 bg-slate-900 text-indigo-400 rounded-md border border-slate-700">MongoDB</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium text-sm flex items-center">
-                                View Case Study <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                            </a>
-                            <a href="#" class="text-slate-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
-                        </div>
+                        <p class="text-slate-400 mb-6">Real-time data visualization platform with interactive charts and responsive UI/UX design.</p>
+                        <a href="#" class="inline-flex items-center text-white font-semibold group-hover:text-emerald-400 transition">
+                            View Project <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 px-4 bg-slate-800/20">
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-white mb-6">Let's work together</h2>
-            <p class="text-slate-400 text-lg mb-10">
-                I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-            </p>
-            <div class="grid md:grid-cols-3 gap-6 mb-12">
-                <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700">
-                    <i class="fa-solid fa-envelope text-indigo-500 text-2xl mb-4"></i>
-                    <p class="text-white font-medium">hello@example.com</p>
-                </div>
-                <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700">
-                    <i class="fab fa-linkedin text-indigo-500 text-2xl mb-4"></i>
-                    <p class="text-white font-medium">linkedin.com/in/johndoe</p>
-                </div>
-                <div class="p-6 bg-slate-800 rounded-2xl border border-slate-700">
-                    <i class="fab fa-twitter text-indigo-500 text-2xl mb-4"></i>
-                    <p class="text-white font-medium">@johndoe_dev</p>
-                </div>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to start your next project?</h2>
+            <div class="flex items-center justify-center mt-[60px]">
+                <p class="text-white me-4 pe-4 border-r border-white">
+                    <i class="fa fa-envelope me-2"></i> syedamirulonline@gmail.com
+                </p>
+                <p class="text-white">
+                    <i class="fa fa-phone me-2"></i> 6017-795 4537
+                </p>
             </div>
-            <a href="mailto:hello@example.com" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-4 rounded-xl font-bold transition shadow-lg shadow-indigo-500/20">
-                Send a Message
-            </a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-10 border-t border-slate-800 text-center text-slate-500 text-sm">
-        <p>&copy; 2024 John Doe. Built with Tailwind CSS.</p>
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="text-slate-500 text-sm">
+            &copy; <script>document.write(new Date().getFullYear())</script> Syed Amirul. All rights reserved.
+        </p>
     </footer>
 
-    <script>
-        // Simple Mobile Menu Toggle
-        const btn = document.getElementById('menu-btn');
-        const nav = document.querySelector('.md\\:flex');
-
-        btn.addEventListener('click', () => {
-            alert('Menu button clicked! Use this space to toggle a mobile menu drawer.');
-        });
-    </script>
 </body>
 </html>
