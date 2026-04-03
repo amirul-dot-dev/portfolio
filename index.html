@@ -16,9 +16,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-
         /* Scroll Reveal Animation */
         .reveal {
             opacity: 0;
@@ -43,10 +40,10 @@
 </head>
 <body class="bg-[#0f172a] text-slate-300 antialiased relative">
 
-    <!-- Animated Background Blobs -->
+    <!-- Background Blobs -->
     <div class="fixed inset-0 -z-10 overflow-hidden">
-        <div class="absolute top-[-10%] left-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-emerald-500/10 rounded-full blur-[80px] md:blur-[120px] animate-blob"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-blue-500/10 rounded-full blur-[80px] md:blur-[120px] animate-blob" style="animation-delay: 2s;"></div>
+        <div class="absolute top-[-10%] left-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-emerald-500/10 rounded-full blur-[80px] animate-blob"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-blue-500/10 rounded-full blur-[80px] animate-blob" style="animation-delay: 2s;"></div>
     </div>
 
     <!-- Navbar -->
@@ -69,16 +66,16 @@
         <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center">
             <div class="md:w-2/3 mt-8 md:mt-0 text-center md:text-left reveal">
                 <div class="inline-block px-3 py-1 mb-4 text-[10px] md:text-xs font-bold tracking-widest uppercase bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">
-                    5+ Years of Industry Experience
+                    5+ Years Experience
                 </div>
-                <h1 class="text-3xl md:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight md:leading-[1.1]">
-                    Full Stack <br><span class="gradient-text">Web Developer.</span>
+                <h1 class="text-3xl md:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
+                    <span class="gradient-text">Web Developer.</span>
                 </h1>
                 <p class="text-sm md:text-lg text-slate-400 mb-8 md:mb-10 max-w-xl mx-auto md:mx-0 leading-relaxed">
-                    Hi, I’m Amirul — a Software Developer with 5+ years of experience building and delivering software solutions. I’ve worked across multiple parts of the stack, from database design to UI refinement, creating high-performance digital experiences.
+                    Hi, I’m Amirul — a Web Developer with 5+ years of experience building and delivering software solutions. I’ve worked across multiple parts of the stack, from database design to UI refinement, creating high-performance digital experiences.
                 </p>
                 <div class="flex items-center justify-center md:justify-start space-x-6">
-                    <a href="#projects" class="bg-emerald-500 hover:bg-emerald-400 text-slate-900 px-6 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl text-sm md:text-base font-bold transition-all transform hover:-translate-y-1 shadow-lg shadow-emerald-500/20">
+                    <a href="#projects" class="bg-emerald-500 hover:bg-emerald-400 text-slate-900 px-6 py-3 md:px-8 md:py-4 rounded-xl text-sm md:text-base font-bold transition-all transform hover:-translate-y-1 shadow-lg shadow-emerald-500/20">
                         View Projects
                     </a>
                     <a href="https://www.linkedin.com/in/syed-amirul-922104367/" target="_blank" class="hover:text-white transition text-xl md:text-2xl">
@@ -87,59 +84,7 @@
                 </div>
             </div>
             <div class="md:w-1/3 relative reveal">
-                <div class="w-48 h-48 md:w-80 md:h-80 bg-emerald-500/20 rounded-full blur-[60px] md:blur-[80px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
                 <img src="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_dev_profile_pic.jpg" class="object-cover w-44 h-44 md:w-80 md:h-80 mx-auto rounded-3xl border border-white/10 p-2 bg-slate-800/50 backdrop-blur-sm shadow-2xl transition-transform duration-500 hover:scale-105">
-            </div>
-        </div>
-    </section>
-
-    <!-- Expertise Section -->
-    <section id="skills" class="py-16 md:py-24 bg-slate-900/30">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 md:mb-12 flex items-center reveal">
-                Expertise <span class="ml-4 h-[1px] w-12 md:w-20 bg-emerald-500/50"></span>
-            </h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <!-- Skill 1 -->
-                <div class="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition-all hover:-translate-y-1 reveal group">
-                    <i class="fab fa-react text-3xl md:text-4xl text-cyan-400 mb-3"></i>
-                    <h3 class="text-white font-bold text-sm md:text-lg">React</h3>
-                </div>
-                <!-- Skill 2 -->
-                <div class="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition-all hover:-translate-y-1 reveal group">
-                    <i class="fab fa-js text-3xl md:text-4xl text-yellow-400 mb-3"></i>
-                    <h3 class="text-white font-bold text-sm md:text-lg">JavaScript</h3>
-                </div>
-                <!-- Skill 3 -->
-                <div class="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition-all hover:-translate-y-1 reveal group">
-                    <i class="fab fa-php text-3xl md:text-4xl text-indigo-400 mb-3"></i>
-                    <h3 class="text-white font-bold text-sm md:text-lg">PHP</h3>
-                </div>
-                <!-- Skill 4 -->
-                <div class="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition-all hover:-translate-y-1 reveal group">
-                    <i class="fa-solid fa-database text-3xl md:text-4xl text-emerald-400 mb-3"></i>
-                    <h3 class="text-white font-bold text-sm md:text-lg">SQL</h3>
-                </div>
-                <!-- Skill 5 -->
-                <div class="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition-all hover:-translate-y-1 reveal group">
-                    <i class="fab fa-html5 text-3xl md:text-4xl text-orange-500 mb-3"></i>
-                    <h3 class="text-white font-bold text-sm md:text-lg">Tailwind</h3>
-                </div>
-                <!-- Skill 6 -->
-                <div class="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition-all hover:-translate-y-1 reveal group">
-                    <i class="fab fa-bootstrap text-3xl md:text-4xl text-purple-500 mb-3"></i>
-                    <h3 class="text-white font-bold text-sm md:text-lg">Bootstrap</h3>
-                </div>
-                <!-- Skill 7 -->
-                <div class="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition-all hover:-translate-y-1 reveal group">
-                    <i class="fa-solid fa-code text-3xl md:text-4xl text-slate-400 mb-3"></i>
-                    <h3 class="text-white font-bold text-sm md:text-lg">HTML/CSS</h3>
-                </div>
-                <!-- Skill 8 -->
-                <div class="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-slate-800/40 border border-white/5 hover:border-emerald-500/30 transition-all hover:-translate-y-1 reveal group">
-                    <i class="fa-solid fa-gears text-3xl md:text-4xl text-blue-400 mb-3"></i>
-                    <h3 class="text-white font-bold text-sm md:text-lg">API Dev</h3>
-                </div>
             </div>
         </div>
     </section>
@@ -148,81 +93,96 @@
     <section id="projects" class="py-16 md:py-24 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="mb-12 md:mb-16 reveal">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Selected Work</h2>
-                <p class="text-sm md:text-base text-slate-400 max-w-2xl">A curated selection of core projects developed during my 5+ years in the industry, focusing on usability, performance, and clean architecture.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Featured Work</h2>
+                <p class="text-sm md:text-base text-slate-400 max-w-2xl">
+                    Real-world projects I have built throughout my journey.
+                </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 md:gap-10">
                 
-                <!-- Project 1: Joytrip -->
-                <div class="group relative bg-slate-800/30 rounded-3xl overflow-hidden border border-white/5 reveal">
+                <!-- Project 1: Resort Booking -->
+                <div class="group relative bg-slate-800/30 rounded-3xl overflow-hidden border border-white/5 reveal hover:border-emerald-500/30 transition-all">
                     <div class="relative aspect-video bg-slate-700 overflow-hidden">
-                        <div id="slider-1" class="auto-slider flex h-full overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth">
-                            <div class="min-w-full h-full snap-center"><a href="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ota_ui_1.png" target="_blank" class="block w-full h-full cursor-zoom-in"><img src="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ota_ui_1.png" class="w-full h-full object-cover"></a></div>
-                            <div class="min-w-full h-full snap-center"><a href="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ota_ui_2.png" target="_blank" class="block w-full h-full cursor-zoom-in"><img src="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ota_ui_2.png" class="w-full h-full object-cover"></a></div>
-                        </div>
-                        <button onclick="slide('slider-1', 'left')" class="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-slate-900/60 text-white opacity-0 group-hover:opacity-100 transition z-10"><i class="fa-solid fa-chevron-left text-xs"></i></button>
-                        <button onclick="slide('slider-1', 'right')" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-slate-900/60 text-white opacity-0 group-hover:opacity-100 transition z-10"><i class="fa-solid fa-chevron-right text-xs"></i></button>
+                        <img src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2FM%2F82b6f24c-5a8b-42f3-93f0-367d025b7c95/watermark:F/width:1200?csig=AAAAAAAAAAAAAAAAAAAAAPCNDTGX21JSqOFwaQE2G-HL2qEp11GQhx02ysSHZbCx&exp=1775242790&osig=AAAAAAAAAAAAAAAAAAAAAC5VlHUmiar89SIVx1XjHF9TPZROoYwqZqh4zE3osGAU&signer=media-rpc&x-canva-quality=screen_3x" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="p-5 md:p-8">
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">The Joytrip Hotel Reservation</h3>
-                        <p class="text-xs md:text-base text-slate-400 leading-relaxed">
-                            An end-to-end hotel reservation engine featuring real-time room availability syncing, dynamic pricing models, and integrated secure payment gateways. Built to handle high-traffic search queries while maintaining a fast, user-friendly interface for travelers worldwide.
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Resort Booking Website</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                            A complete hotel booking system that allows guests to check room availability and book online instantly. It includes a secure payment system and automatically updates room prices in real-time.
                         </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">React</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">TypeScript</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">Tailwind</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">HTML/CSS</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">JavaScript</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">RESTful API</span>
+                        </div>
+                        <a href="https://admin.aiorderpos.com/resortbooking/" target="_blank" class="inline-flex items-center gap-2 text-white font-bold text-sm bg-emerald-600/20 hover:bg-emerald-600 px-4 py-2 rounded-xl transition-all border border-emerald-500/30">
+                            Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 2: Cheng Ho -->
-                <div class="group relative bg-slate-800/30 rounded-3xl overflow-hidden border border-white/5 reveal">
+                <!-- Project 2: Custom Web -->
+                <div class="group relative bg-slate-800/30 rounded-3xl overflow-hidden border border-white/5 reveal hover:border-emerald-500/30 transition-all">
                     <div class="relative aspect-video bg-slate-700 overflow-hidden">
-                        <div id="slider-2" class="auto-slider flex h-full overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth">
-                            <div class="min-w-full h-full snap-center"><a href="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ch_ui_1.png" target="_blank" class="block w-full h-full cursor-zoom-in"><img src="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ch_ui_1.png" class="w-full h-full object-contain"></a></div>
-                            <div class="min-w-full h-full snap-center"><a href="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ch_ui_2.png" target="_blank" class="block w-full h-full cursor-zoom-in"><img src="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ch_ui_2.png" class="w-full h-full object-contain"></a></div>
-                        </div>
-                        <button onclick="slide('slider-2', 'left')" class="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-slate-900/60 text-white opacity-0 group-hover:opacity-100 transition z-10"><i class="fa-solid fa-chevron-left text-xs"></i></button>
-                        <button onclick="slide('slider-2', 'right')" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-slate-900/60 text-white opacity-0 group-hover:opacity-100 transition z-10"><i class="fa-solid fa-chevron-right text-xs"></i></button>
+                        <img src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2FM%2F98e6c889-b02c-4c0b-b5d5-beef413051e9/watermark:F/width:1200?csig=AAAAAAAAAAAAAAAAAAAAADfoqMuvBf6BP38dGz5CI3UXHRGp5K-y5fZZSysaHQTo&exp=1775241418&osig=AAAAAAAAAAAAAAAAAAAAAOfkZ3IOgI-M7du-tMMgQjf3sCjdkJzI0LQ5U_AKtx05&signer=media-rpc&x-canva-quality=screen_3x" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="p-5 md:p-8">
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Cheng Ho Cultural Museum</h3>
-                        <p class="text-xs md:text-base text-slate-400 leading-relaxed">
-                            A comprehensive digital solution for museum visitors, enabling them to explore historical exhibitions through high-quality visual galleries. The system includes an automated e-ticketing module with QR code generation to streamline guest entry and event management.
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Custom Business Website</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                            A custom-built website designed for a professional business look. I focused on making the site good performance and look great on mobile phones, ensuring a smooth experience for all visitors.
                         </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">WordPress</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">Tailwind</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">PHP</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">HTML/CSS</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">JavaScript</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 3: Chateau -->
-                <div class="group relative bg-slate-800/30 rounded-3xl overflow-hidden border border-white/5 reveal">
+                <!-- Project 3: Channel Manager -->
+                <div class="group relative bg-slate-800/30 rounded-3xl overflow-hidden border border-white/5 reveal hover:border-emerald-500/30 transition-all">
                     <div class="relative aspect-video bg-slate-700 overflow-hidden">
-                        <div id="slider-3" class="auto-slider flex h-full overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth">
-                            <div class="min-w-full h-full snap-center"><a href="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ui_chateau_1.png" target="_blank" class="block w-full h-full cursor-zoom-in"><img src="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ui_chateau_1.png" class="w-full h-full object-contain"></a></div>
-                            <div class="min-w-full h-full snap-center"><a href="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ui_chateau_2.png" target="_blank" class="block w-full h-full cursor-zoom-in"><img src="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ui_chateau_2.png" class="w-full h-full object-contain"></a></div>
-                        </div>
-                        <button onclick="slide('slider-3', 'left')" class="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-slate-900/60 text-white opacity-0 group-hover:opacity-100 transition z-10"><i class="fa-solid fa-chevron-left text-xs"></i></button>
-                        <button onclick="slide('slider-3', 'right')" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-slate-900/60 text-white opacity-0 group-hover:opacity-100 transition z-10"><i class="fa-solid fa-chevron-right text-xs"></i></button>
+                        <img src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2FM%2F9bd5e933-539d-48f4-a8b7-ebda23af5a18/watermark:F/width:1200?csig=AAAAAAAAAAAAAAAAAAAAACz7lyIZ-W7Ql5wvS6lyCVUnpVE_-4ru3rZcxu_eZEWI&exp=1775241214&osig=AAAAAAAAAAAAAAAAAAAAAErOHlv3aad4te03TQ_1IksGp45CY8bSOIUfsjSxBP5e&signer=media-rpc&x-canva-quality=screen_3x" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="p-5 md:p-8">
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Chateau Furniture & Interior</h3>
-                        <p class="text-xs md:text-base text-slate-400 leading-relaxed">
-                            A lifestyle-centric platform designed to bridge the gap between interior design inspiration and furniture retail. It features an advanced filtering system for product catalogs and a content management module for sharing interior styling tips.
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Channel Manager Integration</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                            Enables hotels to synchronize room availability, rates, and bookings across multiple Online Travel Agencies (OTAs) in real time. It helps prevent overbooking, reduces manual updates, and ensures consistent pricing across all connected booking platforms.
                         </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">PHP</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">API Integration</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">MySQL</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">RESTful API</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 4: Lavender -->
-                <div class="group relative bg-slate-800/30 rounded-3xl overflow-hidden border border-white/5 reveal">
+                <!-- Project 4: Extranet -->
+                <div class="group relative bg-slate-800/30 rounded-3xl overflow-hidden border border-white/5 reveal hover:border-emerald-500/30 transition-all">
                     <div class="relative aspect-video bg-slate-700 overflow-hidden">
-                        <div id="slider-4" class="auto-slider flex h-full overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth">
-                            <div class="min-w-full h-full snap-center"><a href="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ui_lavender_1.png" target="_blank" class="block w-full h-full cursor-zoom-in"><img src="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ui_lavender_1.png" class="w-full h-full object-contain"></a></div>
-                            <div class="min-w-full h-full snap-center"><a href="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ui_lavender_2.png" target="_blank" class="block w-full h-full cursor-zoom-in"><img src="https://c3rewards.s3.ap-southeast-1.amazonaws.com/ft_ui_lavender_2.png" class="w-full h-full object-contain"></a></div>
-                        </div>
-                        <button onclick="slide('slider-4', 'left')" class="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-slate-900/60 text-white opacity-0 group-hover:opacity-100 transition z-10"><i class="fa-solid fa-chevron-left text-xs"></i></button>
-                        <button onclick="slide('slider-4', 'right')" class="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-slate-900/60 text-white opacity-0 group-hover:opacity-100 transition z-10"><i class="fa-solid fa-chevron-right text-xs"></i></button>
+                        <img src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2FM%2Fdb4301a6-e3d0-4a7d-88ef-32d2b66c2cf3/watermark:F/width:1200?csig=AAAAAAAAAAAAAAAAAAAAAPkJiaYkLYFml-QMDWScjQVVit-Ghl0kfYeQlEjLY_mq&exp=1775242856&osig=AAAAAAAAAAAAAAAAAAAAAJUIx3IL5ZRBYendhvrfF8Ktq7FFbo4C3dX0QT5vk0Jv&signer=media-rpc&x-canva-quality=screen_3x" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                     </div>
                     <div class="p-5 md:p-8">
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Lavender Inn Booking</h3>
-                        <p class="text-xs md:text-base text-slate-400 leading-relaxed">
-                            A specialized hospitality platform focused on enhancing the guest booking journey. It includes a responsive room catalog with integrated availability calendars and an intuitive checkout flow to reduce booking friction.
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Hotel Management Dashboard</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                            An easy-to-use control panel for hotel owners. It allows them to manage their own rooms, change descriptions, set seasonal prices, and view sales reports all in one place.
                         </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">PHP</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">Bootstrap</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">Tailwind</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">PostgreSQL</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">HTML/CSS</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">JavaScript</span>
+                            <span class="px-3 py-1 text-[10px] font-bold uppercase bg-emerald-500/10 text-emerald-400 rounded-lg border border-emerald-500/20">RESTful API</span>
+                        </div>
                     </div>
                 </div>
 
@@ -230,8 +190,8 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 px-6 reveal">
+    <!-- Contact -->
+    <section id="contact" class="py-16 md:py-24 px-6 reveal active">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-2xl md:text-5xl font-bold text-white mb-4">Ready to start your next project?</h2>
             <p class="text-base md:text-lg text-white mb-6">
@@ -248,6 +208,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="py-10 border-t border-white/5 text-center">
         <p class="text-slate-500 text-[10px] md:text-sm uppercase tracking-widest">
             &copy; <script>document.write(new Date().getFullYear())</script> Syed Amirul.
@@ -255,35 +216,12 @@
     </footer>
 
     <script>
-        // Reveal Logic
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('active');
             });
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        // Slider Logic
-        function slide(sliderId, direction) {
-            const slider = document.getElementById(sliderId);
-            const amount = slider.offsetWidth;
-            slider.scrollBy({ left: direction === 'left' ? -amount : amount, behavior: 'smooth' });
-        }
-
-        const autoSliders = document.querySelectorAll('.auto-slider');
-        autoSliders.forEach(slider => {
-            let isPaused = false;
-            setInterval(() => {
-                if (!isPaused) {
-                    const max = slider.scrollWidth - slider.clientWidth;
-                    if (slider.scrollLeft >= max - 1) slider.scrollTo({ left: 0, behavior: 'smooth' });
-                    else slider.scrollBy({ left: slider.clientWidth, behavior: 'smooth' });
-                }
-            }, 4000);
-            const card = slider.closest('.group');
-            card.addEventListener('mouseenter', () => isPaused = true);
-            card.addEventListener('mouseleave', () => isPaused = false);
-        });
     </script>
 </body>
 </html>
